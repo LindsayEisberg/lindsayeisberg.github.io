@@ -1,0 +1,32 @@
+@import "variables";
+
+// h1 {
+// 	font-family: $head-font;
+// 	color: $accent;
+// 	text-transform: uppercase;
+// }
+
+
+// h3 {
+
+// 	font-family: $head-font;
+// 	color: $dark;
+// 	text-transform: uppercase;
+// }
+	
+
+h2 {
+	text-align: right;
+	margin-bottom: 45px;
+}
+
+.develop, .design, .create {
+	background: rgba(27,27,27,0.8);
+	padding: 1px 10px 1px 15px;
+	font-family: $body-font;
+	text-transform: uppercase;
+	color: $light;
+	font-weight: 400;
+	font-size: 3.3em;
+}
+

@@ -1,0 +1,14 @@
+h2 {
+  text-align: right;
+  margin-bottom: 45px; }
+
+.develop, .design, .create {
+  background: rgba(27, 27, 27, 0.8);
+  padding: 1px 10px 1px 15px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  color: #e4e4e4;
+  font-weight: 400;
+  font-size: 3.3em; }
+
+/*# sourceMappingURL=styles.css.map */

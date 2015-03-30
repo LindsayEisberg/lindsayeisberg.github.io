@@ -1,0 +1,31 @@
+$head-font: 'avenir', 'proxima-nova', sans-serif;
+$body-font: 'Playfair Display', serif;
+$light: #e4e4e4;  //light gray
+$dark: #1b1b1b;  //dark dark gray
+$accent: #33262D; //deep maroon
+$accent-green: #4d8179; //teal
+$accent-light: #7dd1c4; //light teal
+
+
+//transform Line
+@mixin transformLine($transformLine) {
+  -webkit-transform: $transformLine;
+  -o-transform: $transformLine;
+  transform: $transformLine;
+  -moz-transform: $transformLine;
+}
+
+@mixin transition($transition) {
+	-webkit-transition: $transition;
+	-o-transition: $transition;
+	-moz-transition: $transition;
+	transition: $transition;
+
+}
+
+@mixin transitionDelay($transitionDelay) {
+	-webkit-transition-delay: $transitionDelay;
+	-o-transition-delay: $transitionDelay;
+	-moz-transition-delay: $transitionDelay;
+	transition-delay: $transitionDelay;	
+}
