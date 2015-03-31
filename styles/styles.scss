@@ -1,5 +1,4 @@
 @import 'bourbon/bourbon';
-@import 'neat/neat';
 @import "variables";
 
 //DEFAULTS
@@ -50,6 +49,9 @@ h2 {
 	@extend .develop;
 	font-size: 2em;
 }
+.mediaName {
+	display: none;
+}
 
 .bgImg {
 	width: 100%;
@@ -80,6 +82,8 @@ h2 {
 .fa-linkedin,
 .fa-envelope-o,
 .fa-github, {
+	width:53px;
+	height: 53px;
 	background: rgba(27,27,27,0.8);
 	color: $light;
 	display: flex;
@@ -107,3 +111,104 @@ h2 {
     margin-left: -512px;
   }
 }
+
+
+@media screen and (max-width: 920px) {
+	.splash {
+		margin-top: 30px;
+		margin-right: 0;
+	}
+	.splashContent {
+		display: block;
+		max-width: 915px;
+ 		margin-left: 55px;
+  		padding: 0;
+  		span {
+  			font-size: 2em;
+  		}
+  			.mediaName {
+		display: none;
+	}
+  		.name {
+  		text-align: center;
+  		font-size: 1em;
+  		}
+ 
+		}
+	
+	.socialMedia {
+		  max-width: 900px;
+ 		 margin: auto;
+	}
+	
+	.social {
+		display: flex;
+		justify-content: center;
+		li {
+			display: inline-block;
+		}
+	}
+
+
+
+}
+
+@media screen and (max-width:320px) {
+
+	.splash {
+		margin-top: 30px;
+		margin-right: 0;
+		max-width: 320px;
+	}
+	.splashContent {
+		margin-top: 10%;
+		display: block;
+		max-width: 320px;
+ 		margin-left: 0;
+  		span {
+  			font-size: 1em;
+
+  		}
+
+  		.mediaName {
+  			background: rgba(27,27,27,0.8);
+			font-family: $body-font;
+			text-transform: uppercase;
+			color: $light;
+			font-weight: 400;
+			text-align: center;
+  			font-size: 1em;
+  			display: block;
+  			margin-left: 20px;
+  		}
+
+  		.name {
+  			display: none;
+		}	
+
+  	}
+		
+
+	.socialMedia {
+		 max-width: 310px;
+ 		 margin: auto;
+	}
+	
+	.social {
+		display: flex;
+		justify-content: center;
+		li {
+			display: inline-block;
+		}
+	}
+
+.bgImg {
+	background: $light;
+    margin-left: 0;
+    left: 0;
+
+
+}
+}
+
+
