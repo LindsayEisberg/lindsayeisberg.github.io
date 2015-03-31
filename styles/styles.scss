@@ -5,7 +5,7 @@
 body {
 	padding: 0;
 	margin: 0;
-	overflow-x:hidden;
+	overflow:hidden;
 }
 
 ul, li {
@@ -19,8 +19,8 @@ ul {
 a {
 	text-decoration: none;
 	&:hover {
-		color: $light;
-		background: $alphaDark;
+		// color: $light;
+		// background: $alphaDark;
 		text-decoration: none;
 	}
 
@@ -143,6 +143,65 @@ h2 {
 
   }
 
+ .menu-cont {
+  	float: right;
+  	display: block;
+  	cursor: pointer;
+  	padding: 20px;
+ }
+
+ .menu-txt {
+  	display: inline-block;
+  	margin-right: 15px;
+  	position: relative;
+  	bottom: 3px;
+  	color: $light;
+  	text-transform: uppercase;
+  	font-family: $head-font;
+  	font-size: 20px;
+  	letter-spacing: 6px;
+  	font-weight: 400;
+  	-webkit-font-smoothing: antialiased;
+
+  }
+
+.menu {
+	content: "";
+	display: inline-block;
+	position: relative;
+	float: right;
+	opacity: 1;
+	height: 3px;
+	width: 30px;
+	background-color: $light;
+	@include transition(transform 400ms ease);
+	&.active {
+		@include transform(rotate(45deg) translateY(12px));
+		&:before {
+			opacity: 0;
+		}
+		&:after {
+			@include transform(rotate(-450deg) translateX(16px));
+		}
+	}
+	&:before, &:after {
+		content: "";
+		display: block;
+		position: absolute;
+		opacity:1;
+		height: 3px;
+		width: 30px;
+		background-color: $light;
+	}
+	&:before {
+		top: 8px;
+		@include transition(opacity 400ms ease);
+	}
+	&:after {
+		top: 16px;
+		@include transition(transform 400ms ease);
+	}
+}
 
 
 
