@@ -5,6 +5,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	overflow-x:hidden;
 }
 
 ul, li {
@@ -34,6 +35,77 @@ h2 {
  h4 {
  	text-align: right;
  }
+
+
+
+.splash {
+	margin-top: 15%;
+  	margin-right: 2%;
+  	position: relative;
+	z-index: 0;
+  	@include transition();
+}
+
+.page-wrap {
+	width: 100%;
+}
+
+/////NAVIGATION MENU/////
+.toggle {
+	text-decoration: none;
+	font-size: 30;
+	width: 30px;
+	height: 30px;
+	color: $dark;
+	@include transition();
+	@include position(fixed, 20px 0 0 30px);
+	z-index: 1;
+	cursor: pointer;
+	&:hover {
+		color: $accent-light;
+		@include transition();
+	}
+}
+
+.sidebar {
+	@include position(fixed, 0px 0 0px -500px / 1000px * 100% );
+	@include transition();
+	width: 470px / 1000px * 100%;
+	padding: 30px;
+	background: rgba(51, 38, 45, 0.8);
+	z-index: 0;
+	li {
+		font-family: $head-font;
+		font-size: 18px;
+		margin-bottom: 20px;
+		-webkit-font-smoothing: antialiased;
+		display: flex;
+		justify-content: space-between;
+		a {
+			color: $light;
+			&:hover {
+				color: $light;
+				@include transition(all .4 ease);
+			}
+		}
+	}
+}
+
+#sidebarToggle {
+	display: none;
+	&:checked + .page-wrap {
+		.sidebar {
+			left: 0px;
+		}
+		.toggle {
+			left: 480px;
+		}
+		// .profilePage {
+		// 	padding-left: 260px;
+		// }
+	}
+}
+
 
 .develop, .design, .create {
 	background: rgba(27,27,27,0.8);
@@ -72,10 +144,7 @@ h2 {
   }
 
 
-.splash {
-	margin-top: 15%;
-  	margin-right: 2%;
-}
+
 
 //social media icons
 

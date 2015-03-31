@@ -14,10 +14,11 @@
 </head>
 <body>
 <div class="bgImg">
-	<header>
-		
-	</header>
+	<input type="checkbox" id="sidebarToggle">
+	<div class="page-wrap">
+		<label for="sidebarToggle" class="toggle">☰</label>
 	<div class="splash">
+		<label for="menu-toggle" id="toggle">≡</label>
 		<div class="row">
 			<div class="col-md-1 socialMedia">
 				<ul class="social">
@@ -34,8 +35,17 @@
 				<h4><span class="name">Lindsay Eisberg | Frontend & UI Development</span></h4>
 			</div>
 		</div>
+	</div> <!-- splash -->
+	<div class="sidebar">
+		<ul>
+			<li><a href="#">LINK</a></li>
+			<li><a href="#">LINK</a></li>
+			<li><a href="#">LINK</a></li>
+			<li><a href="#">LINK</a></li>
+		</ul>
 	</div>
-</div>
+</div> <!-- page-wrap -->
+</div> <!-- bgImg -->
 
 <link rel="stylesheet" href="bower_components/jquery/dist/jquery.js">
 <link rel="stylesheet" href="bower_components/bootstrap/dist/js/bootstrap.js">
