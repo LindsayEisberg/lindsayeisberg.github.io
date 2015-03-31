@@ -1,24 +1,40 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
 @import "variables";
 
-// h1 {
-// 	font-family: $head-font;
-// 	color: $accent;
-// 	text-transform: uppercase;
-// }
+//DEFAULTS
+body {
+	padding: 0;
+	margin: 0;
+}
 
+ul, li {
+	margin: 0;
+	padding: 0;
+}
 
-// h3 {
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	&:hover {
+		color: $light;
+		background: $alphaDark;
+		text-decoration: none;
+	}
 
-// 	font-family: $head-font;
-// 	color: $dark;
-// 	text-transform: uppercase;
-// }
-	
+}
+
 
 h2 {
 	text-align: right;
 	margin-bottom: 45px;
 }
+
+ h4 {
+ 	text-align: right;
+ }
 
 .develop, .design, .create {
 	background: rgba(27,27,27,0.8);
@@ -28,5 +44,66 @@ h2 {
 	color: $light;
 	font-weight: 400;
 	font-size: 3.3em;
+	}
+
+.name {
+	@extend .develop;
+	font-size: 2em;
 }
 
+.bgImg {
+	width: 100%;
+	height: 100%;
+    background: -webkit-linear-gradient(-45deg, rgba(51,38,45,0.8) 0%,rgba(77,129,121,0.8) 54%,rgba(125,185,232,0.8) 100%), url("../background_2.jpeg"); 
+	background: -o-linear-gradient(-45deg, rgba(51,38,45,0.8) 0%,rgba(77,129,121,0.8) 54%,rgba(125,185,232,0.8) 100%), url("../background_2.jpeg") ; 
+	background: linear-gradient(135deg, rgba(51,38,45,0.8) 0%,rgba(77,129,121,0.8) 54%,rgba(125,185,232,0.8) 100%), url("../background_2.jpeg"); 
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: 0;
+
+  }
+
+
+.splash {
+	margin-top: 15%;
+  	margin-right: 2%;
+}
+
+//social media icons
+
+.fa-linkedin,
+.fa-envelope-o,
+.fa-github, {
+	background: rgba(27,27,27,0.8);
+	color: $light;
+	display: flex;
+	margin-bottom: 10px;
+  	margin-left: 10px;
+  	padding: 5px 0 5px 5px;
+	margin-right: 15px;
+	&:hover {
+		background: 0;
+		color: $dark;
+		border: 2px inset $dark;
+		@include transition(all .7s ease);
+	}
+}
+.fa-github, .fa-linkedin {
+	padding-left: 9px;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+  .bgImg{
+    left: 50%;
+    margin-left: -512px;
+  }
+}
