@@ -14,8 +14,14 @@ $('.menu-cont').on('click', function(event) {
   	$('#sidebarToggle')[0].checked = false;
     $('.menu-txt').text(open);
 
-
   } 
   	$('.menu-txt').attr('data-text',open);
 	});
+
+      $('#fullpage').fullpage({
+
+
+      
+    });
+
 });

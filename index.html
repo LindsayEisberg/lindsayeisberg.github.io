@@ -6,6 +6,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
 	<link rel="stylesheet" href="styles/styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' rel='stylesheet' type='text/css'>
 	<script src="//use.typekit.net/idu4scn.js"></script>
@@ -13,52 +14,62 @@
 
 </head>
 <body>
-<div class="bgImg">
-	<header>
-  		<a class='menu-cont' href='#'>
-    	<span class='menu'></span>
-    	<span class='menu-txt' data-text='Close'>
-      	Open
-    	</span>
-  		</a>
-	</header>
+<div id="fullpage">
+	<div class="section">
+		<div class="bgImg">
+			<header>
+  				<a class='menu-cont' href='#'>
+    			<span class='menu'></span>
+    			<span class='menu-txt' data-text='Close'>
+      			Open
+    			</span>
+  				</a>
+			</header>
 
 
-	<input type="checkbox" id="sidebarToggle" name="sidebarToggle">
-	<div class="page-wrap">
+			<input type="checkbox" id="sidebarToggle" name="sidebarToggle">
+		<div class="page-wrap">
 		<label for="sidebarToggle" class="toggle">☰</label>
-	<div class="splash">
-		<div class="row">
-			<div class="col-xs-1 col-sm-1 col-md-1 socialMedia">
-				<ul class="social">
-					<li><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
-					<li><a href="#"><i class="fa fa-envelope-o fa-3x"></i></a></li>
-					<li><a href="#"><i class="fa fa-github fa-3x"></i></a></li>
-				</ul>
+		<div class="splash">
+			<div class="row">
+				<div class="col-md-1 socialMedia">
+					<ul class="social">
+						<li><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
+						<li><a href="#"><i class="fa fa-envelope-o fa-3x"></i></a></li>
+						<li><a href="#"><i class="fa fa-github fa-3x"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-11 splashContent">
+					<h4><span class="mediaName">Lindsay Eisberg | Frontend & UI Development</span></h4>
+					<h2><span class="develop">DEVELOP</span></h2>
+					<h2><span class="design">DESIGN</span></h2>
+					<h2><span class="create">CREATE</span></h2>
+					<h4><span class="name">Lindsay Eisberg | Frontend & UI Development</span></h4>
+				</div>
+				<div class="col-xs-2 col-sm-2"></div>
 			</div>
-			<div class="col-xs-9 col-sm-9 col-md-11 splashContent">
-				<h4><span class="mediaName">Lindsay Eisberg | Frontend & UI Development</span></h4>
-				<h2><span class="develop">DEVELOP</span></h2>
-				<h2><span class="design">DESIGN</span></h2>
-				<h2><span class="create">CREATE</span></h2>
-				<h4><span class="name">Lindsay Eisberg | Frontend & UI Development</span></h4>
-			</div>
-			<div class="col-xs-2 col-sm-2"></div>
+		</div> <!-- splash -->
+		<div class="sidebar">
+			<ul>
+				<li><a href="#">LINK</a></li>
+				<li><a href="#">LINK</a></li>
+				<li><a href="#">LINK</a></li>
+				<li><a href="#">LINK</a></li>
+			</ul>
 		</div>
-	</div> <!-- splash -->
-	<div class="sidebar">
-		<ul>
-			<li><a href="#">LINK</a></li>
-			<li><a href="#">LINK</a></li>
-			<li><a href="#">LINK</a></li>
-			<li><a href="#">LINK</a></li>
-		</ul>
-	</div>
-</div> <!-- page-wrap -->
-</div> <!-- bgImg -->
+		</div> <!-- page-wrap -->
+	</div> <!-- bgImg -->
+	</div> <!-- section1 -->
+	<div class="section">WORK</div>
+	<div class="section">RESUME</div>
+	<div class="section">ABOUT</div>
+	<div class="section">CONTACT</div>
+</div> <!-- fullpage -->
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/fullpage.js/vendors/jquery.slimscroll.js"></script>
+<script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
 <script src="main.js"></script>
 
 

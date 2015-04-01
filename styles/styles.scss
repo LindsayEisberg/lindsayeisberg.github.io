@@ -114,12 +114,12 @@ h2 {
 	text-transform: uppercase;
 	color: $light;
 	font-weight: 400;
-	font-size: 3.3em;
+	font-size: 2.5em;
 	}
 
 .name {
 	@extend .develop;
-	font-size: 2em;
+	font-size: 1.3em;
 }
 .mediaName {
 	display: none;
@@ -210,14 +210,14 @@ h2 {
 .fa-linkedin,
 .fa-envelope-o,
 .fa-github, {
-	width:53px;
-	height: 53px;
+	width:50px;
+	height: 50px;
 	background: rgba(27,27,27,0.8);
 	color: $light;
 	display: flex;
 	margin-bottom: 10px;
   	margin-left: 10px;
-  	padding: 5px 0 5px 5px;
+  	padding: 5px 0 5px 4px;
 	margin-right: 15px;
 	&:hover {
 		background: 0;
@@ -227,116 +227,116 @@ h2 {
 	}
 }
 .fa-github, .fa-linkedin {
-	padding-left: 9px;
+	padding-left: 7px;
 }
 
 
 
 
-// @media screen and (max-width: 1024px) {
-//   .bgImg{
-//     left: 50%;
-//     margin-left: -512px;
-//   }
-// }
+@media screen and (max-width: 1024px) {
+  .bgImg{
+    left: 50%;
+    margin-left: -512px;
+  }
+}
 
 
-// @media screen and (max-width: 920px) {
-// 	.splash {
-// 		margin-top: 30px;
-// 		margin-right: 0;
-// 	}
-// 	.splashContent {
-// 		display: block;
-// 		max-width: 915px;
-//  		margin-left: 55px;
-//   		padding: 0;
-//   		span {
-//   			font-size: 2em;
-//   		}
-//   			.mediaName {
-// 		display: none;
-// 	}
-//   		.name {
-//   		text-align: center;
-//   		font-size: 1em;
-//   		}
+@media screen and (max-width: 920px) {
+	.splash {
+		margin-top: 30px;
+		margin-right: 0;
+	}
+	.splashContent {
+		display: block;
+		max-width: 915px;
+ 		margin-left: 55px;
+  		padding: 0;
+  		span {
+  			font-size: 2em;
+  		}
+  			.mediaName {
+		display: none;
+	}
+  		.name {
+  		text-align: center;
+  		font-size: 1em;
+  		}
  
-// 		}
+		}
 	
-// 	.socialMedia {
-// 		  max-width: 900px;
-//  		 margin: auto;
-// 	}
+	.socialMedia {
+		  max-width: 900px;
+ 		 margin: auto;
+	}
 	
-// 	.social {
-// 		display: flex;
-// 		justify-content: center;
-// 		li {
-// 			display: inline-block;
-// 		}
-// 	}
+	.social {
+		display: flex;
+		justify-content: center;
+		li {
+			display: inline-block;
+		}
+	}
 
 
 
-// }
+}
 
-// @media screen and (max-width:320px) {
+@media screen and (max-width:320px) {
 
-// 	.splash {
-// 		margin-top: 30px;
-// 		margin-right: 0;
-// 		max-width: 320px;
-// 	}
-// 	.splashContent {
-// 		margin-top: 10%;
-// 		display: block;
-// 		max-width: 320px;
-//  		margin-left: 0;
-//   		span {
-//   			font-size: 1em;
+	.splash {
+		margin-top: 30px;
+		margin-right: 0;
+		max-width: 320px;
+	}
+	.splashContent {
+		margin-top: 10%;
+		display: block;
+		max-width: 320px;
+ 		margin-left: 0;
+  		span {
+  			font-size: 1em;
 
-//   		}
+  		}
 
-//   		.mediaName {
-//   			background: rgba(27,27,27,0.8);
-// 			font-family: $body-font;
-// 			text-transform: uppercase;
-// 			color: $light;
-// 			font-weight: 400;
-// 			text-align: center;
-//   			font-size: 1em;
-//   			display: block;
-//   			margin-left: 20px;
-//   		}
+  		.mediaName {
+  			background: rgba(27,27,27,0.8);
+			font-family: $body-font;
+			text-transform: uppercase;
+			color: $light;
+			font-weight: 400;
+			text-align: center;
+  			font-size: 1em;
+  			display: block;
+  			margin-left: 20px;
+  		}
 
-//   		.name {
-//   			display: none;
-// 		}	
+  		.name {
+  			display: none;
+		}	
 
-//   	}
+  	}
 		
 
-// 	.socialMedia {
-// 		 max-width: 310px;
-//  		 margin: auto;
-// 	}
+	.socialMedia {
+		 max-width: 310px;
+ 		 margin: auto;
+	}
 	
-// 	.social {
-// 		display: flex;
-// 		justify-content: center;
-// 		li {
-// 			display: inline-block;
-// 		}
-// 	}
+	.social {
+		display: flex;
+		justify-content: center;
+		li {
+			display: inline-block;
+		}
+	}
 
-// .bgImg {
-// 	background: $light;
-//     margin-left: 0;
-//     left: 0;
+.bgImg {
+	background: $light;
+    margin-left: 0;
+    left: 0;
 
 
-// }
-// }
+}
+}
 
 
