@@ -91,7 +91,7 @@ h4 {
   #sidebarToggle:checked + .page-wrap .toggle {
     left: 480px; }
 
-.develop, .name, .design, .create {
+.develop, .name, .subHead, .pageHead, .design, .create {
   background: rgba(27, 27, 27, 0.8);
   padding: 1px 10px 1px 15px;
   font-family: "Playfair Display", serif;
@@ -100,8 +100,11 @@ h4 {
   font-weight: 400;
   font-size: 2.5em; }
 
-.name {
+.name, .subHead {
   font-size: 1.3em; }
+
+.pageHead {
+  font-size: 2em; }
 
 .mediaName {
   display: none; }
@@ -121,70 +124,6 @@ h4 {
   left: 0;
   background-size: cover;
   z-index: 0; }
-
-.menu-cont {
-  float: right;
-  display: block;
-  cursor: pointer;
-  padding: 20px; }
-
-.menu-txt {
-  display: inline-block;
-  margin-right: 15px;
-  position: relative;
-  bottom: 3px;
-  color: #e4e4e4;
-  text-transform: uppercase;
-  font-family: "avenir", "proxima-nova", sans-serif;
-  font-size: 20px;
-  letter-spacing: 6px;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased; }
-
-.menu {
-  content: "";
-  display: inline-block;
-  position: relative;
-  float: right;
-  opacity: 1;
-  height: 3px;
-  width: 30px;
-  background-color: #e4e4e4;
-  -webkit-transition: -webkit-transform 400ms ease;
-  -moz-transition: -moz-transform 400ms ease;
-  transition: transform 400ms ease; }
-  .menu.active {
-    -webkit-transform: rotate(45deg) translateY(12px);
-    -moz-transform: rotate(45deg) translateY(12px);
-    -ms-transform: rotate(45deg) translateY(12px);
-    -o-transform: rotate(45deg) translateY(12px);
-    transform: rotate(45deg) translateY(12px); }
-    .menu.active:before {
-      opacity: 0; }
-    .menu.active:after {
-      -webkit-transform: rotate(-450deg) translateX(16px);
-      -moz-transform: rotate(-450deg) translateX(16px);
-      -ms-transform: rotate(-450deg) translateX(16px);
-      -o-transform: rotate(-450deg) translateX(16px);
-      transform: rotate(-450deg) translateX(16px); }
-  .menu:before, .menu:after {
-    content: "";
-    display: block;
-    position: absolute;
-    opacity: 1;
-    height: 3px;
-    width: 30px;
-    background-color: #e4e4e4; }
-  .menu:before {
-    top: 8px;
-    -webkit-transition: opacity 400ms ease;
-    -moz-transition: opacity 400ms ease;
-    transition: opacity 400ms ease; }
-  .menu:after {
-    top: 16px;
-    -webkit-transition: -webkit-transform 400ms ease;
-    -moz-transition: -moz-transform 400ms ease;
-    transition: transform 400ms ease; }
 
 .fa-linkedin,
 .fa-envelope-o,
@@ -210,6 +149,10 @@ h4 {
 
 .fa-github, .fa-linkedin {
   padding-left: 7px; }
+
+.pageBg {
+  color: white;
+  height: 100%; }
 
 @media screen and (max-width: 1024px) {
   .bgImg {
