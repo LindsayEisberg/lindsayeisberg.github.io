@@ -123,7 +123,7 @@ h2 {
 	font-size: 1.3em;
 }
 
-.pageHead, .workHead {
+.pageHead {
 	@extend .develop;
 	font-size: 1.3em;
 	text-align: center;
@@ -135,9 +135,9 @@ h2 {
 .bgImg {
 	width: 100%;
 	height: 100%;
-    background: -webkit-linear-gradient(-45deg, rgba(51,38,45,0.8) 0%,rgba(77,129,121,0.8) 54%,rgba(125,185,232,0.8) 100%), url("../background_2.jpeg"); 
-	background: -o-linear-gradient(-45deg, rgba(51,38,45,0.8) 0%,rgba(77,129,121,0.8) 54%,rgba(125,185,232,0.8) 100%), url("../background_2.jpeg") ; 
-	background: linear-gradient(135deg, rgba(51,38,45,0.8) 0%,rgba(77,129,121,0.8) 54%,rgba(125,185,232,0.8) 100%), url("../background_2.jpeg"); 
+    background: -webkit-linear-gradient(-45deg, rgba(51,38,45,0.8) 0%,rgba(77,129,121,0.8) 54%,rgba(125,185,232,0.8) 100%), url("../background_2.jpeg");
+	background: -o-linear-gradient(-45deg, rgba(51,38,45,0.8) 0%,rgba(77,129,121,0.8) 54%,rgba(125,185,232,0.8) 100%), url("../background_2.jpeg") ;
+	background: linear-gradient(135deg, rgba(51,38,45,0.8) 0%,rgba(77,129,121,0.8) 54%,rgba(125,185,232,0.8) 100%), url("../background_2.jpeg");
     min-height: 100%;
     min-width: 1024px;
     width: 100%;
@@ -210,6 +210,79 @@ h2 {
 	}
 }
 
+//////STICKY NAV/////
+nav {
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0);
+	z-index: 1000;
+	@include transition(all .5s ease);
+	ul {
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+		float: right;
+		margin-top: 30px;
+		margin-right: 40px;
+		@include transition(all .5s ease);
+	}
+	li {
+		vertical-align: middle;
+		display: inline-block;
+		width: 19%;
+		text-transform: uppercase;
+		position: relative;
+		@include transition(all .5s ease);
+		a {
+			font-family: $head-font;
+			font-weight: 400;
+			font-size: 22px;
+			display: inline-block;
+			width: 100%;
+			color: $dark;
+			@include transition(all .5s ease);
+			&:before {
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				bottom: -4px;
+				left: 0;
+				background-color: $light;
+				visibility: hidden;
+				@include transform(scaleX(0));
+				@include transition(all .3s ease-in-out);
+			}
+			&:hover {
+				color: $accent-light;
+			}
+		}
+		a:hover:before {
+			visibility: visible;
+			@include transform(scaleX(1));
+		}
+	}
+}
+
+.fixedNav {
+	background-color: rgba(255, 255, 255, 0.9);
+	height: 60px;
+	ul {
+		margin-top: 20px;
+	}
+	li {
+		margin-bottom: 20px;
+	}
+	a {
+		color: $dark;
+		font-size: 16px;
+	}
+	a:before {
+		background-color:$dark;
+		height: 1px;
+	}
+}
 
 
 //social media icons
@@ -248,9 +321,18 @@ h2 {
 // 	background: linear-gradient(135deg, rgba(51,38,45,0.3) 0%,rgba(77,129,121,0.3) 54%,rgba(125,185,232,0.3) 100%);
 	background-color: white;
 	height: 100%;
-		h4 {
+	h4 {
+
 		text-align: left;
 	}
+	h2 {
+		margin-top: 3%;
+		text-align: left;
+	}
+}
+
+.slick-prev, .slick-next {
+	top: 33%;
 }
 
 .container {
@@ -268,13 +350,21 @@ h2 {
 	color: $accent-light;
 }
 
+.slick-dots {
+	bottom: 0;
+	top: 45px;
+}
 .workSide {
 	width: 40%;
-	
+
+}
+
+.slick-slide {
+	margin-top: 2%;
 }
 
 .workExamples {
-	
+
 
 	h3 {
 		color: $accent;
@@ -282,14 +372,57 @@ h2 {
 		text-transform: uppercase;
 		border-bottom: 5px double $accent;
 		text-align: center;
+		font-size: 2.5em;
+		border-bottom-width: 10px;
+		border-bottom-color: rgba(27,27,27,0.4);
 	}
 	img {
-		width: 80%;
+		width: 100%;
 		border: 2px solid $light;
 		border-radius: 5px;
-		margin:auto;
+
 	}
 }
+
+	/////SLIDER//////
+
+.image-slider {
+	position:relative;
+	display: inline-block;
+	line-height: 0;
+}
+
+
+.image-slider > div {
+	position: absolute;
+	top: 0; bottom: 0; left: 0;
+	width: 25px;
+	max-width: 100%;
+	overflow: hidden;
+	resize: horizontal;
+}
+
+/* Cross-browser resizer styling */
+.image-slider > div:before {
+	content: '';
+	position: absolute;
+	right: 0; bottom: 0;
+	width: 13px; height: 13px;
+	padding: 5px;
+	background: linear-gradient(-45deg, white 50%, transparent 0);
+	background-clip: content-box;
+	cursor: ew-resize;
+	-webkit-filter: drop-shadow(0 0 2px black);
+	filter: drop-shadow(0 0 2px black);
+}
+
+.image-slider img {
+	user-select: none;
+	width: 100%;
+
+}
+
+
 
 
 
@@ -321,14 +454,14 @@ h2 {
   		text-align: center;
   		font-size: 1em;
   		}
- 
+
 		}
-	
+
 	.socialMedia {
 		  max-width: 900px;
  		 margin: auto;
 	}
-	
+
 	.social {
 		display: flex;
 		justify-content: center;
@@ -372,16 +505,16 @@ h2 {
 
   		.name {
   			display: none;
-		}	
+		}
 
   	}
-		
+
 
 	.socialMedia {
 		 max-width: 310px;
  		 margin: auto;
 	}
-	
+
 	.social {
 		display: flex;
 		justify-content: center;

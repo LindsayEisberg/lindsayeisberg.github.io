@@ -92,7 +92,7 @@ h4 {
   #sidebarToggle:checked + .page-wrap .toggle {
     left: 480px; }
 
-.develop, .name, .subHead, .pageHead, .workHead, .design, .create {
+.develop, .name, .subHead, .pageHead, .design, .create {
   background: rgba(27, 27, 27, 0.8);
   padding: 1px 10px 1px 15px;
   font-family: "Playfair Display", serif;
@@ -104,7 +104,7 @@ h4 {
 .name, .subHead {
   font-size: 1.3em; }
 
-.pageHead, .workHead {
+.pageHead {
   font-size: 1.3em;
   text-align: center; }
 
@@ -191,6 +191,85 @@ h4 {
     -moz-transition: -moz-transform 400ms ease;
     transition: transform 400ms ease; }
 
+nav {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  nav ul {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  nav li {
+    vertical-align: middle;
+    display: inline-block;
+    width: 19%;
+    text-transform: uppercase;
+    position: relative;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    nav li a {
+      font-family: "avenir", "proxima-nova", sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+      display: inline-block;
+      width: 100%;
+      color: #1b1b1b;
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+      nav li a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -4px;
+        left: 0;
+        background-color: #e4e4e4;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; }
+      nav li a:hover {
+        color: #7dd1c4; }
+    nav li a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      -moz-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      -o-transform: scaleX(1);
+      transform: scaleX(1); }
+
+.fixedNav {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 60px; }
+  .fixedNav ul {
+    margin-top: 20px; }
+  .fixedNav li {
+    margin-bottom: 20px; }
+  .fixedNav a {
+    color: #1b1b1b;
+    font-size: 16px; }
+  .fixedNav a:before {
+    background-color: #1b1b1b;
+    height: 1px; }
+
 .social {
   margin-left: 10px; }
 
@@ -224,6 +303,12 @@ h4 {
   height: 100%; }
   .pageBg h4 {
     text-align: left; }
+  .pageBg h2 {
+    margin-top: 3%;
+    text-align: left; }
+
+.slick-prev, .slick-next {
+  top: 33%; }
 
 .slick-prev:before, .slick-next:before {
   color: #4d8179; }
@@ -231,20 +316,63 @@ h4 {
 .slick-prev:before:hover, .slick-next:before:hover {
   color: #7dd1c4; }
 
+.slick-dots {
+  bottom: 0;
+  top: 45px; }
+
 .workSide {
   width: 40%; }
+
+.slick-slide {
+  margin-top: 2%; }
 
 .workExamples h3 {
   color: #33262D;
   font-family: "avenir", "proxima-nova", sans-serif;
   text-transform: uppercase;
   border-bottom: 5px double #33262D;
-  text-align: center; }
+  text-align: center;
+  font-size: 2.5em;
+  border-bottom-width: 10px;
+  border-bottom-color: rgba(27, 27, 27, 0.4); }
 .workExamples img {
-  width: 80%;
+  width: 100%;
   border: 2px solid #e4e4e4;
-  border-radius: 5px;
-  margin: auto; }
+  border-radius: 5px; }
+
+.image-slider {
+  position: relative;
+  display: inline-block;
+  line-height: 0; }
+
+.image-slider > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 25px;
+  max-width: 100%;
+  overflow: hidden;
+  resize: horizontal; }
+
+/* Cross-browser resizer styling */
+.image-slider > div:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 13px;
+  height: 13px;
+  padding: 5px;
+  background: linear-gradient(-45deg, white 50%, transparent 0);
+  background-clip: content-box;
+  cursor: ew-resize;
+  -webkit-filter: drop-shadow(0 0 2px black);
+  filter: drop-shadow(0 0 2px black); }
+
+.image-slider img {
+  user-select: none;
+  width: 100%; }
 
 @media screen and (max-width: 1024px) {
   .bgImg {
