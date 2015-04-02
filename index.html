@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick.css">				
+	<link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick-theme.css">
+
 	<link rel="stylesheet" href="styles/styles.css">
 	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' rel='stylesheet' type='text/css'>
 	<script src="//use.typekit.net/idu4scn.js"></script>
@@ -17,19 +20,19 @@
 <div id="fullpage">
 	<div class="section" id="home">
 		<div class="bgImg">
-			<!-- <header>
+			<header>
   				<a class='menu-cont' href='#'>
     			<span class='menu'></span>
     			<span class='menu-txt' data-text='Close'>
       			Open
     			</span>
   				</a>
-			</header> -->
+			</header>
 
 
 			<input type="checkbox" id="sidebarToggle" name="sidebarToggle">
 		<div class="page-wrap">
-		<label for="sidebarToggle" class="toggle">+</label>
+		<label for="sidebarToggle" class="toggle"></label>
 		<div class="splash">
 			<div class="row">
 				<div class="col-md-1 socialMedia">
@@ -37,6 +40,7 @@
 						<li><a href="#"><i class="fa fa-linkedin fa-3x"></i></a></li>
 						<li><a href="#"><i class="fa fa-envelope-o fa-3x"></i></a></li>
 						<li><a href="#"><i class="fa fa-github fa-3x"></i></a></li>
+						<li><a href="images/LEresume.pdf" download><i class="fa fa-file-text-o fa-3x"></i></a></li>
 					</ul>
 				</div>
 				<div class="col-md-11 splashContent">
@@ -54,7 +58,7 @@
 			<ul>
 				<li><a href="#" rel="home" class="active">HOME</a></li>
 				<li><a href="#" rel="work">WORK</a></li>
-				<li><a href="#" rel="resume">RESUME</a></li>
+				<li><a href="images/LEresume.pdf" download>RESUME</a></li>
 				<li><a href="#" rel="about">ABOUT</a></li>
 				<li><a href="#" rel="contact">CONTACT</a></li>
 			</ul>
@@ -63,63 +67,53 @@
 		</div> <!-- page-wrap -->
 	</div> <!-- bgImg -->
 	</div> <!-- section1 -->
-	<div class="section" id="work">
-	<div class="pageBg">
-	<!-- PLACEHODER FOR STICKY NAV -->
-		<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left" role="search">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-	<h2><span class="pageHead">WORK</span></h2>
+	<!-- WORK SECTION -->
+
+	<div class="section" id="work">
+
+	<div class="pageBg">
+	<h4><span class="workHead">WORK | Examples of Code & Design</span></h4>
+	
+	<div class="container">	
+		<div class="row">
+			<div class= "workExamples">
+				<div class="your-class">
+  					<div>
+  					<h3>AUDITORIUM</h3>
+  					<img src="images/auditorium.jpg">
+  					<p>This is a description of Auditorium</p>
+  					<p>Tech Stack</p>
+  					<a href="">GITHUB</a><a href="">TO THE SITE</a>
+  					</div>
+  					<div>
+  						<h3>FLIXAR</h3>
+  						<img src="">
+  						<p>This is a description of Flixar</p>
+  						<p>Tech Stack</p>
+  						<a href="">GITHUB</a><a href="">TO THE SITE</a>
+  					</div>
+	  				<div>
+	  					<h3>BOOTSTRUCK</h3>
+  						<img src="">
+  						<p>This is a description of Bootstruck</p>
+  						<p>Tech Stack</p>
+  						<a href="">GITHUB</a><a href="">TO THE SITE</a>
+	  				</div>
+	  				<div>
+	  					<h3>POWELL PERALTA</h3>
+  						<img src="">
+  						<p>This is a description of Powell Peralta</p>
+  						<p>Tech Stack</p>
+  						<a href="">GITHUB</a><a href="">TO THE SITE</a>
+	  				</div>
+				</div>
+			</div>	
+
+		</div>
+	</div>
+	
+
 	
 
 
@@ -150,6 +144,8 @@
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/fullpage.js/vendors/jquery.slimscroll.js"></script>
 <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+<script src="bower_components/slick.js/slick/slick.js"></script>
+
 <script src="main.js"></script>
 
 

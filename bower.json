@@ -19,7 +19,8 @@
     "font-awesome": "~4.3.0",
     "bourbon": "~4.2.1",
     "neat": "~1.7.2",
-    "fullpage.js": "~2.6.2"
+    "fullpage.js": "~2.6.2",
+    "slick.js": "~1.4.1"
   },
   "resolutions": {
     "jquery": "~2.1.3"
