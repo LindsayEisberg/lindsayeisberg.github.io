@@ -306,6 +306,9 @@ nav {
 .fa-github, .fa-linkedin {
   padding-left: 7px; }
 
+.fa-file-text-o {
+  padding: 5px 0 5px 8px; }
+
 .pageBg {
   background-color: white;
   height: 100%; }
