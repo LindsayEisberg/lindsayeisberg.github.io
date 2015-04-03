@@ -81,7 +81,7 @@
         // Create some defaults, extending them with any options that were provided
         options = $.extend({
             //navigation
-            menu: false,
+            menu: true,
             anchors:[],
             navigation: false,
             navigationPosition: 'right',
@@ -516,9 +516,9 @@
             }
 
             //moving the menu outside the main container if it is inside (avoid problems with fixed positions when using CSS3 tranforms)
-            if(options.menu && options.css3 && $(options.menu).closest(WRAPPER_SEL).length){
-                $(options.menu).appendTo($body);
-            }
+            // if(options.menu && options.css3 && $(options.menu).closest(WRAPPER_SEL).length){
+            //     $(options.menu).appendTo($body);
+            // }
 
             if(options.scrollOverflow){
                 if(document.readyState === 'complete'){
