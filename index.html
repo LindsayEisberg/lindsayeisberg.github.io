@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick-theme.css">
+	<!-- <link rel="stylesheet" href="vendors/onepage-scroll.css"> -->
+	<link rel="stylesheet" href="styles/styles.css">
+	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' rel='stylesheet' type='text/css'>
+	<script src="//use.typekit.net/idu4scn.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body>
+	<nav id="top-nav">
+		<ul>
+			<li><a href="#" rel="home">HOME</a></li>
+			<li><a href="#" rel="work">WORK</a></li>
+			<li><a href="images/LEresume.pdf" download>RESUME</a></li>
+			<li><a href="#" rel="about">ABOUT</a></li>
+			<li><a href="#" rel="contact">CONTACT</a></li>
+		</ul>
+	</nav>
+<div id="fullpage">
+	<div class="section" id="home">
+		<div class="bgImg">
+
+			<header>
+  				<a class='menu-cont' href='#'>
+    			<span class='menu'></span>
+    			<span class='menu-txt' data-text='Close'>
+      			Open
+    			</span>
+  				</a>
+			</header>
+
+
+			<input type="checkbox" id="sidebarToggle" name="sidebarToggle">
+		<div class="page-wrap">
+		<label for="sidebarToggle" class="toggle"></label>
+		<div class="splash">
+			<div class="row">
+				<div class="col-md-1 socialMedia">
+					<ul class="social">
+						<li><a href="https://www.linkedin.com/in/lindsayeisberg" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+
+						<li><a href="https://github.com/LindsayEisberg" target="_blank"><i class="fa fa-github fa-3x"></i></a></li>
+						<li><a href="images/LEresume.pdf" download><i class="fa fa-file-text-o fa-3x"></i></a></li>
+						<li><a href="mailto:lindsay.eisberg@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-11 splashContent">
+					<h4><span class="mediaName">Lindsay Eisberg | Frontend & UI Development</span></h4>
+					<h2><span class="develop">DEVELOP</span></h2>
+					<h2><span class="design">DESIGN</span></h2>
+					<h2><span class="create">CREATE</span></h2>
+					<h4><span class="name">Lindsay Eisberg | Frontend & UI Development</span></h4>
+				</div>
+
+			</div>
+		</div> <!-- splash -->
+		<div class="sidebar">
+			<div class="sideNav">
+			<ul id="menu">
+				<li data-menuanchor="lindsayeisberg"><a href="#lindsayeisberg">HOME</a></li>
+				<li data-menuanchor="portfolio"><a href="#portfolio">WORK</a></li>
+				<!-- <li><a href="images/LEresume.pdf" download>RESUME</a></li> -->
+				<li data-menuanchor="aboutme"><a href="#aboutme">ABOUT</a></li>
+				<li data-menuanchor="contactme"><a href="#contactme">CONTACT</a></li>
+			</ul>
+		</div>
+	</div> <!-- sidebar -->
+	</div> <!-- page-wrap -->
+	</div> <!-- bgImg -->
+</div><!-- section1 -->
+	<!-- WORK SECTION -->
+
+<div class="section" id="work">
+	<div class="pageBg">
+	<h2><span class="pageHead">WORK</span></h2><h4><span class="subHead">Examples of Code & Design</span></h4>
+
+	<div class="container">
+		<div class="row">
+			<div class= "workExamples">
+				<div class="your-class">
+  					<div>
+  					<div class="col-md-4 leftSlide">
+  						<h3>AUDITORIUM</h3>
+
+  						<p>Auditorium is the final project created at The Iron Yard. Created with a Rails Engineer, Auditorium is a real time video conferencing application using WebRTC standards. With Auditorium, you can create profiles, moderate lectures, events, & presentations, or participate in other events, asking questions or listening in as a viewer.  </p>
+  						<div class="tech"><h5>Tech Stack</h5>
+								<div class="row">
+								<div class="col-xs-6 techLeft">
+								<p>AngularJS</p>
+								<p>WebRTC</p>
+								<p>Bourbon/Sass</p>
+								</div>
+								<div class="col-xs-6 techRight">
+									<p>Twitter Bootstrap</p>
+									<p>Json Web Tokens</p>
+									<p>Rails</p>
+								</div>
+							</div>
+						</div>
+						<div class="btns">
+							<a href="https://github.com/Harvey-Nash/TIYFinalProject" target="_blank" class="slideBtn">GITHUB</a><a href="http://lindsayeisberg.github.io/TIYFinalProject/HarveyNash/client/" target="_blank" class="slideBtn">TO THE SITE</a>
+						</div>
+  					</div>
+  					<div class="col-md-8" rightSlide>
+  						<img src="images/auditorium2.jpg">
+  					</div>
+
+  					</div>
+  					<div>
+  					<div class="col-md-4 leftSlide">
+  						<h3>FLIXAR</h3>
+						<p>Flixar was the first team project to be completed at The Iron Yard. Using IMDB APIs, Flixar pulls movie suggestions based on a series of questions to determine mood, & genres preferred. </p>
+						<div class="tech"><h5>Tech Stack</h5>
+							<div class="row">
+							<div class="col-xs-6 techLeft">
+							<p>AJAX</p>
+							<p>Sass/CSS3</p>
+							<p>Foundation</p>
+							</div>
+							<div class="col-xs-6 techRight">
+								<p>Javascript/Jquery</p>
+								<p>Underscore</p>
+								<p>HTML5</p>
+							</div>
+						</div>
+					</div>
+					<div class="btns">
+						<a href="https://github.com/LindsayEisberg/gitReal" target="_blank" class="slideBtn">GITHUB</a><a href="http://lindsayeisberg.github.io/gitReal/" target="_blank" class="slideBtn">TO THE SITE</a>
+					</div>
+  					</div>
+  					<div class="col-md-8 rightSlide">
+							<video width="100%" controls autoplay loop>
+							  <source src="images/flixar.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+  					</div>
+  					</div>
+	  				<div>
+	  					<div class="col-md-4 leftSlide">
+	  						<h3>POWELL PERALTA</h3>
+	  						<p>Peralta site is an example of my abilities to transform a comp JPG to a responsive design. This example was done without the use of Twitter Bootstrap, Foundation, or other frameworks typically used for layout. It is fully responsive and uses CSS3 animations to add excitement to the comp provided. </p>
+								<div class="tech"><h5>Tech Stack</h5>
+									<div class="row">
+									<div class="col-xs-6 techLeft">
+									<p>CSS3/Sass</p>
+									<p>HTML5</p>
+									</div>
+									<div class="col-xs-6 techRight">
+
+									</div>
+								</div>
+							</div>
+							<div class="btns">
+								<a href="https://github.com/LindsayEisberg/powellPeraltaSkateSite" target="_blank" class="slideBtn">GITHUB</a><a href="http://lindsayeisberg.github.io/powellPeraltaSkateSite/" target="_blank" class="slideBtn">TO THE SITE</a>
+							</div>
+	  					</div>
+	  					<div class="col-md-8 rightSlide">
+								<img src="images/myPeralta.jpg" alt="">
+	  					</div>
+						</div>
+	  			</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+	 <!-- WORK SECTION -->
+<!-- 	<div class="section" id="resume">
+	<div class="pageBg">
+<h2><span class="pageHead">RESUME</span></h2>
+	</div>
+</div> --><!-- RESUME SECTION -->
+	<div class="section" id="about">
+		<div class="aboutBg">
+			<div class="container aboutHeader">
+				<h2 class="about"><span class="pageHead">ABOUT</span></h2>
+			</div>
+
+			<div class="container comments">
+				<h4><span class="subHead">My name is Lindsay Eisberg &</span></h4>
+				<h5><span class="aboutMe"> I develop web applications.</span></h5>
+				<h5><span class="aboutMe"> I enjoy clean UI.</span></h5>
+				<h5><span class="aboutMe"> I love beautiful design.</span></h5>
+				<h5><span class="aboutMe"> I Code. I Program. I Develop. I Design.</span></h5>
+			</div>
+		</div>
+	</div><!-- ABOUT SECTION -->
+	<div class="section" id="contact">
+		<div class="pageBg">
+			<h2><span class="pageHead">CONTACT</span></h2>
+			<h4><span class="subHead">Like What you see? Get in Touch!</span></h4>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8 centerContact">
+						<div class="socialMediaContact">
+							<ul class="social">
+
+
+								<li><a href="https://www.linkedin.com/in/lindsayeisberg" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
+
+								<li><a href="https://github.com/LindsayEisberg" target="_blank"><i class="fa fa-github fa-3x"></i></a></li>
+								<li><a href="images/LEresume.pdf" download><i class="fa fa-file-text-o fa-3x"></i></a></li>
+								<li><a href="mailto:lindsay.eisberg@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a></li>
+							</ul>
+
+						</div>
+						<h4><span class="subHead">516 | 270 | 5264</span></h4>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="vendors/jquery.onepage-scroll.js"></script>
+<script src="bower_components/fullpage.js/vendors/jquery.slimscroll.js"></script>
+<script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+<script src="bower_components/slick.js/slick/slick.js"></script>
+
+<script src="main.js"></script>
+
+
+</body>
+</html>
