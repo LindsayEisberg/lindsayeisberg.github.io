@@ -90,7 +90,7 @@ html, body {
     -webkit-transition: none !important;
     transition: none !important;
 }
-#fp-nav {
+/* #fp-nav {
     position: fixed;
     z-index: 100;
     margin-top: -32px;
@@ -103,8 +103,8 @@ html, body {
 }
 #fp-nav.left {
     left: 17px;
-}
-.fp-slidesNav{
+} */
+/* .fp-slidesNav{
     position: absolute;
     z-index: 4;
     left: 50%;
@@ -200,3 +200,4 @@ html, body {
 #fp-nav ul li .fp-tooltip.left {
     left: 20px;
 }
+ */

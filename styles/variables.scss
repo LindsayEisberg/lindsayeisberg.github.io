@@ -10,3 +10,9 @@ $text-shadow: 2px 2px 0px $dark;
 $slick-prev-character: "←" !default;
 $slick-next-character: "→" !default;
 $slick-dot-character: "•" !default;
+
+@mixin shadow($shadow) {
+  -webkit-box-shadow: ($shadow);
+  -moz-box-shadow: ($shadow);
+  box-shadow: ($shadow);
+}

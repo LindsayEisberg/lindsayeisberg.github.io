@@ -51,6 +51,46 @@ h2 {
 	width: 100%;
 }
 
+////arrow////
+.arrow {
+	color: $light;
+	font-size: 3.4em;
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+	@include animation(bounce 2s infinite);
+}
+
+
+//social media icons
+
+.social {
+	margin-left: 10px;
+}
+
+.fa-linkedin,
+.fa-envelope-o ,
+.fa-github, .fa-file-text-o{
+	width:50px;
+	height: 50px;
+	background: rgba(27,27,27,0.8);
+	color: $light;
+	display: flex;
+	margin-bottom: 10px;
+  	margin-left: 10px;
+  	padding: 5px 0 5px 4px;
+	margin-right: 15px;
+	&:hover {
+		background: 0;
+		color: $dark;
+		border: 2px inset $dark;
+		@include transition(all .7s ease);
+	}
+}
+.fa-github, .fa-linkedin {
+	padding-left: 7px;
+}
+
 /////NAVIGATION MENU/////
 .toggle {
 	text-decoration: none;
@@ -75,21 +115,21 @@ h2 {
 	padding: 30px;
 	background: rgba(51, 38, 45, 0.93);
 	z-index: 0;
+	@include shadow(7px 3px 11px -1px rgba(0,0,0,0.75));
 	li {
-		font-family: $head-font;
-		font-size: 18px;
+		font-family: $body-font;
+		font-size: 16px;
 		margin-bottom: 20px;
 		-webkit-font-smoothing: antialiased;
 		display: flex;
 		justify-content: space-between;
 		a {
 			color: $light;
-			border: 2px solid $alphaDark;
 			padding: 10px 30px 9px 9px;
 		  font-size: 1.3em;
 			&:hover {
-					background: $alphaDark;
-					@include transition(all .7s ease);
+					color: $accent-light;
+					@include transition(all .5s ease);
 			}
 		}
 	}
@@ -105,11 +145,80 @@ h2 {
 			left: 480px;
 		}
 
+
 		// .profilePage {
 		// 	padding-left: 260px;
 		// }
 	}
 }
+
+.sideSocial {
+	display: flex;
+	justify-content: center;
+	margin-top: 20%;
+	li {
+		a{
+			border: 0;
+			background: 0;
+			font-size: 1em;
+			padding-left: 0;
+			padding-right: 0;
+			&:hover {
+				background:0;
+				border: 0;
+
+			}
+		}
+	}
+	.fa-linkedin,
+	.fa-envelope-o ,
+	.fa-github {
+		background: 0;
+		&:hover {
+			border: 0;
+			color: $accent-light;
+			@include transition(all 0.5s ease);
+		}
+	}
+}
+
+.phone {
+	text-align: center;
+	font-size: 1.2em;
+	color: $light;
+	font-family: $head-font;
+	margin-top: -38px;
+	a {
+		color: $light;
+		&:hover {
+			color: $accent-light;
+			@include transition(all 0.4s ease);
+		}
+	}
+	.phoneLogo {
+		padding-right: 10px;
+	}
+	&:hover {
+		color: $accent-light;
+		@include transition(all 0.4s ease);
+	}
+}
+
+
+
+
+
+
+/*
+	&:hover {
+
+		text-decoration: underline;
+
+	}
+	.phoneLogo {
+		padding-right: 10px;
+	}
+} */
 
 
 .develop, .design, .create {
@@ -221,13 +330,12 @@ h2 {
 
 //////STICKY NAV/////
 nav {
-	display:none;
 	width: 100%;
 	height: 80px;
 	position: fixed;
 	background-color: rgba(255, 255, 255, 0);
 	z-index: 1000;
-	opacity:0;
+	margin-top: -20px;
 	@include transition(all .5s ease);
 	ul {
 		width: 50%;
@@ -276,6 +384,12 @@ nav {
 	}
 }
 
+.aboutBg {
+	nav {
+		margin-top: 0;
+	}
+}
+
 .fixedNav {
 	background-color: rgba(255, 255, 255, 0.9);
 	height: 60px;
@@ -295,35 +409,6 @@ nav {
 	}
 }
 
-
-//social media icons
-
-.social {
-	margin-left: 10px;
-}
-
-.fa-linkedin,
-.fa-envelope-o,
-.fa-github, .fa-file-text-o{
-	width:50px;
-	height: 50px;
-	background: rgba(27,27,27,0.8);
-	color: $light;
-	display: flex;
-	margin-bottom: 10px;
-  	margin-left: 10px;
-  	padding: 5px 0 5px 4px;
-	margin-right: 15px;
-	&:hover {
-		background: 0;
-		color: $dark;
-		border: 2px inset $dark;
-		@include transition(all .7s ease);
-	}
-}
-.fa-github, .fa-linkedin {
-	padding-left: 7px;
-}
 
 //////WORK PAGE/////
 .pageBg {
@@ -551,6 +636,26 @@ video.vid {
 .centerContact {
 	h4 {
 		text-align: center;
+	}
+}
+
+
+////JQUERY////
+
+.none {
+	display: none;
+}
+
+
+
+////Keyframes///
+
+@include keyframes (bounce) {
+	0%, 20%, 50%, 80%, 100% {
+		@include transform(translateY(0));
+	}
+	40% {
+		@include transform(translateY(-30px));
 	}
 }
 

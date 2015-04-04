@@ -15,6 +15,7 @@ $('.menu-cont').on('click', function(event) {
   if (!menuOpen) {
     $('.menu-txt').text(close);
     $('#sidebarToggle')[0].checked = true;
+    $('.social').addClass('none');
 
     menuOpen = true;
     console.log(menuOpen)
@@ -22,6 +23,8 @@ $('.menu-cont').on('click', function(event) {
   else if (menuOpen) {
    $('#sidebarToggle')[0].checked = false;
     $('.menu-txt').text('open');
+    $('.social').removeClass('none');
+
     menuOpen = false;
   }
     $('.menu-txt').attr('data-text',open);
@@ -29,26 +32,26 @@ $('.menu-cont').on('click', function(event) {
 
   });
 
-///STICKY NAV///
-$(window).scroll(function(event){
-  var scroll = $(window).scrollTop();
-  if(scroll>=100) {
-    $('nav').css('opacity',1);
-  }
-  if(scroll<=100) {
-    $('nav').css('opacity', 0);
-  }
-});
-
-///SCROLLING///
-$('nav').on('click', 'ul li a', function(e){
-  e.preventDefault();
-  var loc = $(this).attr('rel');
-  loc = '#' + loc;
-  $('html, body').animate({
-    scrollTop: ($(loc).offset().top
-  )}, 800);
-});
+// ///STICKY NAV///
+// $(window).scroll(function(event){
+//   var scroll = $(window).scrollTop();
+//   if(scroll>=100) {
+//     $('nav').css('opacity',1);
+//   }
+//   if(scroll<=100) {
+//     $('nav').css('opacity', 0);
+//   }
+// });
+//
+// ///SCROLLING///
+// $('nav').on('click', 'ul li a', function(e){
+//   e.preventDefault();
+//   var loc = $(this).attr('rel');
+//   loc = '#' + loc;
+//   $('html, body').animate({
+//     scrollTop: ($(loc).offset().top
+//   )}, 800);
+// });
 
 
 
@@ -56,6 +59,13 @@ $('nav').on('click', 'ul li a', function(e){
 //   e.preventDefault();
 //   $('html, body').animate({scrollTop: 0}, 800);
 // });
+
+
+// $('.fp-viewing-lindsayeisberg').children('nav').addClass('none');
+// $('.fp-viewing-portfolio').children('nav').removeClass('none')
+// $('.fp-viewing-aboutme').children('nav').removeClass('none')
+// $('.fp-viewing-contactme').children('nav').removeClass('none')
+
 
 ////WORK SLIDER////
   $('.your-class').slick({
