@@ -32,41 +32,6 @@ $('.menu-cont').on('click', function(event) {
 
   });
 
-// ///STICKY NAV///
-// $(window).scroll(function(event){
-//   var scroll = $(window).scrollTop();
-//   if(scroll>=100) {
-//     $('nav').css('opacity',1);
-//   }
-//   if(scroll<=100) {
-//     $('nav').css('opacity', 0);
-//   }
-// });
-//
-// ///SCROLLING///
-// $('nav').on('click', 'ul li a', function(e){
-//   e.preventDefault();
-//   var loc = $(this).attr('rel');
-//   loc = '#' + loc;
-//   $('html, body').animate({
-//     scrollTop: ($(loc).offset().top
-//   )}, 800);
-// });
-
-
-
-// $('nav').on('click', '.logo a', function(e){
-//   e.preventDefault();
-//   $('html, body').animate({scrollTop: 0}, 800);
-// });
-
-
-// $('.fp-viewing-lindsayeisberg').children('nav').addClass('none');
-// $('.fp-viewing-portfolio').children('nav').removeClass('none')
-// $('.fp-viewing-aboutme').children('nav').removeClass('none')
-// $('.fp-viewing-contactme').children('nav').removeClass('none')
-
-
 ////WORK SLIDER////
   $('.your-class').slick({
     dots: true,
