@@ -1,0 +1,212 @@
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  .container {
+    width: 1050px;
+
+  }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px) {
+  .bgImg{
+    left: 50%;
+    margin-left: -512px;
+  }	.splash {
+  		margin-top: 30px;
+  		margin-right: 0;
+  	}
+  	.splashContent {
+  		display: block;
+  /* 		max-width: 915px;
+   */ 		margin-left: 55px;
+    		padding: 0;
+    		span {
+    			font-size: 2em;
+    		}
+    			.mediaName {
+  		display: none;
+  	}
+    		.name {
+    		text-align: center;
+    		font-size: 1em;
+    		}
+
+  		}
+
+  	.socialMedia {
+  		  max-width: 900px;
+   		 margin: auto;
+  	}
+
+  	.social {
+  		display: flex;
+  		justify-content: center;
+  		li {
+  			display: inline-block;
+  		}
+  	}
+
+
+  .splash {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  .splashContent {
+    display: block;
+/* 		max-width: 915px;
+ */ 		margin-left: 55px;
+      padding: 0;
+      span {
+        font-size: 2em;
+      }
+        .mediaName {
+    display: none;
+  }
+      .name {
+      text-align: center;
+      font-size: 1em;
+      }
+
+    }
+
+  .socialMedia {
+      max-width: 900px;
+      margin: auto;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    li {
+      display: inline-block;
+    }
+  }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : landscape) {
+  .bgImg{
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-width : 768px)
+and (max-width : 1024px)
+and (orientation : portrait) {
+  .bgImg{
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 480px) {
+  .splash {
+		margin-top: 30px;
+		margin-right: 0;
+		max-width: 320px;
+	}
+	.splashContent {
+		margin-top: 10%;
+		display: block;
+		max-width: 320px;
+ 		margin-left: 0;
+  		span {
+  			font-size: 1em;
+
+  		}
+
+  		.mediaName {
+  			background: rgba(27,27,27,0.8);
+			font-family: $body-font;
+			text-transform: uppercase;
+			color: $light;
+			font-weight: 400;
+			text-align: center;
+  			font-size: 1em;
+  			display: block;
+  			margin-left: 20px;
+  		}
+
+  		.name {
+  			display: none;
+		}
+
+  	}
+
+
+	.socialMedia {
+		 max-width: 310px;
+ 		 margin: auto;
+	}
+
+	.social {
+		display: flex;
+		justify-content: center;
+		li {
+			display: inline-block;
+		}
+	}
+
+.bgImg {
+	background: $light;
+    margin-left: 0;
+    left: 0;
+
+
+}
+
+  .icon-bar {
+    color: $dark;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+/* STYLES GO HERE */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* STYLES GO HERE */
+}
+
+
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px) {
+/* STYLES GO HERE */
+}
+
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px)
+and (orientation : landscape) {
+/* STYLES GO HERE */
+}
+
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-width : 320px)
+and (max-width : 568px)
+and (orientation : portrait) {
+/* STYLES GO HERE */
+}
