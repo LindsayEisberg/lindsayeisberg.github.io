@@ -601,8 +601,7 @@ video.vid {
 
   .splashContent {
     display: block;
-    /* 		max-width: 915px;
-     */
+    max-width: 915px;
     margin-left: 55px;
     padding: 0; }
     .splashContent span {
@@ -629,8 +628,7 @@ video.vid {
 
   .splashContent {
     display: block;
-    /* 		max-width: 915px;
-     */
+    max-width: 915px;
     margin-left: 55px;
     padding: 0; }
     .splashContent span {
@@ -660,8 +658,234 @@ video.vid {
   .bgImg {
     left: 50%;
     margin-left: -512px; } }
+@media only screen and (min-width: 569px) and (max-width: 768px) {
+  h2 {
+    font-size: 25px; }
+
+  h4 {
+    font-size: 14px; }
+
+  .arrow {
+    display: none; }
+
+  .splash {
+    margin-top: 30px;
+    margin-right: 0;
+    max-width: 768px;
+    width: 100%; }
+
+  .splashContent {
+    margin-top: 10%;
+    display: block;
+    max-width: 768px;
+    width: 100%;
+    margin-left: 0; }
+    .splashContent span {
+      font-size: 2em; }
+    .splashContent .mediaName {
+      background: rgba(27, 27, 27, 0.8);
+      font-family: "Playfair Display", serif;
+      text-transform: uppercase;
+      color: #e4e4e4;
+      font-weight: 400;
+      text-align: center;
+      font-size: 1em;
+      display: block;
+      margin-left: 20px; }
+    .splashContent .name {
+      display: none; }
+
+  .subHead {
+    font-size: 1.1em; }
+
+  .social {
+    display: flex;
+    justify-content: center; }
+    .social li {
+      display: inline-block; }
+
+  .bgImg, .aboutBg {
+    background: -webkit-linear-gradient(bottom left, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%), url("../background_2.jpeg");
+    background: -o-linear-gradient(bottom left, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%), url("../background_2.jpeg");
+    background: linear-gradient(to top right, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%), url("../background_2.jpeg");
+    background-size: cover;
+    margin-left: 0;
+    left: 0; }
+
+  .slick-dots {
+    display: none; }
+
+  .slideBtn {
+    margin-right: 17px;
+    margin-left: 14px;
+    margin-bottom: 10%; }
+
+  .workExamples img, .workExamples poster {
+    height: auto; }
+
+  .swipe {
+    display: block; }
+
+  .comments {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    margin-right: 0;
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+    max-width: 768px;
+    width: 100%; }
+
+  .aboutBg h4 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 25px; }
+  .aboutBg h5 {
+    font-soze: 1.5em; }
+
+  #full {
+    display: none; }
+
+  #and, #media {
+    display: inline; }
+
+  #and {
+    padding-left: 10px;
+    font-size: 1.5em; }
+
+  .aboutMe {
+    font-size: 0.9em; }
+
+  .last {
+    margin-top: 10%;
+    text-align: center; }
+
+  .lastAbout {
+    margin-left: -35px;
+    margin-right: -40px;
+    font-size: 1em; }
+
+  .top-nav {
+    display: none; } }
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  h2 {
+    font-size: 25px; }
+
+  h4 {
+    font-size: 14px; }
+
+  .arrow {
+    display: none; }
+
+  .splash {
+    margin-top: 30px;
+    margin-right: 0;
+    max-width: 568px;
+    width: 100%; }
+
+  .splashContent {
+    margin-top: 10%;
+    display: block;
+    max-width: 568px;
+    width: 100%;
+    margin-left: 0; }
+    .splashContent span {
+      font-size: 2em; }
+    .splashContent .mediaName {
+      background: rgba(27, 27, 27, 0.8);
+      font-family: "Playfair Display", serif;
+      text-transform: uppercase;
+      color: #e4e4e4;
+      font-weight: 400;
+      text-align: center;
+      font-size: 1em;
+      display: block;
+      margin-left: 20px; }
+    .splashContent .name {
+      display: none; }
+
+  .subHead {
+    font-size: 1.1em; }
+
+  .social {
+    display: flex;
+    justify-content: center; }
+    .social li {
+      display: inline-block; }
+
+  .bgImg, .aboutBg {
+    background: -webkit-linear-gradient(bottom left, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%);
+    background: -o-linear-gradient(bottom left, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%);
+    background: linear-gradient(to top right, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%);
+    margin-left: 0;
+    left: 0; }
+
+  .slick-dots {
+    display: none; }
+
+  .slideBtn {
+    margin-right: 17px;
+    margin-left: 14px;
+    margin-bottom: 10%; }
+
+  .workExamples img, .workExamples poster {
+    height: auto; }
+
+  .swipe {
+    display: block; }
+
+  .comments {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    margin-right: 0;
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+    max-width: 568px;
+    width: 100%; }
+
+  .aboutBg h4 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 25px; }
+  .aboutBg h5 {
+    font-soze: 1.5em; }
+
+  #full {
+    display: none; }
+
+  #and, #media {
+    display: inline; }
+
+  #and {
+    padding-left: 10px;
+    font-size: 1.5em; }
+
+  .aboutMe {
+    font-size: 0.9em; }
+
+  .last {
+    margin-top: 10%;
+    text-align: center; }
+
+  .lastAbout {
+    margin-left: -35px;
+    margin-right: -40px;
+    font-size: 1em; }
+
+  .top-nav {
+    display: none; } }
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 321px) and (max-width: 480px) {
   h2 {
     font-size: 25px; }
 
@@ -671,12 +895,14 @@ video.vid {
   .splash {
     margin-top: 30px;
     margin-right: 0;
-    max-width: 320px; }
+    max-width: 480px;
+    width: 100%; }
 
   .splashContent {
     margin-top: 10%;
     display: block;
-    max-width: 320px;
+    max-width: 480px;
+    width: 100%;
     margin-left: 0; }
     .splashContent span {
       font-size: 2em; }
@@ -697,7 +923,7 @@ video.vid {
     font-size: 1.1em; }
 
   .socialMedia {
-    max-width: 310px;
+    max-width: 480px;
     margin: auto; }
 
   .social {
@@ -737,12 +963,16 @@ video.vid {
     -moz-transform: translate(0);
     -ms-transform: translate(0);
     -o-transform: translate(0);
-    transform: translate(0); }
+    transform: translate(0);
+    max-width: 480px;
+    width: 100%; }
 
   .aboutBg h4 {
-    font-size: 1em;
+    font-size: 1.5em;
     text-align: center;
     margin-bottom: 25px; }
+  .aboutBg h5 {
+    font-soze: 1.5em; }
 
   #full {
     display: none; }
@@ -764,24 +994,31 @@ video.vid {
   .lastAbout {
     margin-left: -35px;
     margin-right: -40px;
-    font-size: 0.8em; }
+    font-size: 1em; }
 
   .top-nav {
     display: none; } }
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* STYLES GO HERE */ }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
-  /* STYLES GO HERE */ }
-/* iPhone 5 (portrait & landscape)----------- */
-@media only screen and (min-width: 320px) and (max-width: 568px) {
-  /* STYLES GO HERE */ }
-/* iPhone 5 (landscape)----------- */
-@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: landscape) {
-  /* STYLES GO HERE */ }
-/* iPhone 5 (portrait)----------- */
-@media only screen and (min-width: 320px) and (max-width: 568px) and (orientation: portrait) {
-  /* STYLES GO HERE */ }
+  h2 {
+    font-size: 25px; }
+
+  h4 {
+    font-size: 14px; }
+
+  .splash {
+    margin-top: 30px;
+    margin-right: 0;
+    max-width: 320px;
+    width: 100%; }
+
+  .splashContent {
+    margin-top: 10%;
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    margin-left: 0; }
+    .splashContent span {
+      font-size: 2em; } }
 
 /*# sourceMappingURL=styles.css.map */
