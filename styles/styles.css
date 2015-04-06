@@ -553,6 +553,12 @@ video.vid {
   .centerContact h4 a {
     color: #1b1b1b; }
 
+.swipe {
+  display: none; }
+
+#and, #media {
+  display: none; }
+
 .none {
   display: none; }
 
@@ -656,6 +662,12 @@ video.vid {
     margin-left: -512px; } }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  h2 {
+    font-size: 25px; }
+
+  h4 {
+    font-size: 14px; }
+
   .splash {
     margin-top: 30px;
     margin-right: 0;
@@ -667,7 +679,7 @@ video.vid {
     max-width: 320px;
     margin-left: 0; }
     .splashContent span {
-      font-size: 1em; }
+      font-size: 2em; }
     .splashContent .mediaName {
       background: rgba(27, 27, 27, 0.8);
       font-family: "Playfair Display", serif;
@@ -681,6 +693,9 @@ video.vid {
     .splashContent .name {
       display: none; }
 
+  .subHead {
+    font-size: 1.1em; }
+
   .socialMedia {
     max-width: 310px;
     margin: auto; }
@@ -691,13 +706,68 @@ video.vid {
     .social li {
       display: inline-block; }
 
-  .bgImg {
-    background: #e4e4e4;
+  .bgImg, .aboutBg {
+    background: -webkit-linear-gradient(bottom left, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%);
+    background: -o-linear-gradient(bottom left, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%);
+    background: linear-gradient(to top right, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%);
     margin-left: 0;
     left: 0; }
 
-  .icon-bar {
-    color: #1b1b1b; } }
+  .slick-dots {
+    display: none; }
+
+  .slideBtn {
+    margin-right: 17px;
+    margin-left: 14px;
+    margin-bottom: 10%; }
+
+  .workExamples img, .workExamples poster {
+    height: auto; }
+
+  .swipe {
+    display: block; }
+
+  .comments {
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    margin-right: 0;
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0); }
+
+  .aboutBg h4 {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 25px; }
+
+  #full {
+    display: none; }
+
+  #and, #media {
+    display: inline; }
+
+  #and {
+    padding-left: 10px;
+    font-size: 1.5em; }
+
+  .aboutMe {
+    font-size: 0.9em; }
+
+  .last {
+    margin-top: 10%;
+    text-align: center; }
+
+  .lastAbout {
+    margin-left: -35px;
+    margin-right: -40px;
+    font-size: 0.8em; }
+
+  .top-nav {
+    display: none; } }
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   /* STYLES GO HERE */ }
