@@ -708,7 +708,6 @@ video.vid {
     background: -webkit-linear-gradient(bottom left, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%), url("../background_2.jpeg");
     background: -o-linear-gradient(bottom left, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%), url("../background_2.jpeg");
     background: linear-gradient(to top right, rgba(51, 38, 45, 0.7) 0%, rgba(77, 129, 121, 0.7) 54%, rgba(125, 185, 232, 0.7) 100%), url("../background_2.jpeg");
-    background-size: cover;
     margin-left: 0;
     left: 0; }
 
@@ -854,7 +853,7 @@ video.vid {
     width: 100%; }
 
   .aboutBg h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-align: center;
     margin-bottom: 25px; }
   .aboutBg h5 {
@@ -880,7 +879,7 @@ video.vid {
   .lastAbout {
     margin-left: -35px;
     margin-right: -40px;
-    font-size: 1em; }
+    font-size: 0.8em; }
 
   .top-nav {
     display: none; } }
@@ -1020,5 +1019,14 @@ video.vid {
     margin-left: 0; }
     .splashContent span {
       font-size: 2em; } }
+/*  @media only screen
+and (max-width : 768px){
+  #fullpage {
+    display: none;
+  }
+}
+@media only screen
+and (max-width : 320px) {
+} */
 
 /*# sourceMappingURL=styles.css.map */
