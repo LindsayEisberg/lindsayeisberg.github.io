@@ -50,7 +50,7 @@ h4 {
 
 .fa-linkedin,
 .fa-envelope-o,
-.fa-github, .fa-file-text-o {
+.fa-github {
   width: 50px;
   height: 50px;
   background: rgba(27, 27, 27, 0.8);
@@ -62,7 +62,7 @@ h4 {
   margin-right: 15px; }
   .fa-linkedin:hover,
   .fa-envelope-o:hover,
-  .fa-github:hover, .fa-file-text-o:hover {
+  .fa-github:hover {
     background: 0;
     color: #1b1b1b;
     border: 2px inset #1b1b1b;
@@ -174,9 +174,31 @@ h4 {
       -webkit-transition: all 0.4s ease;
       -moz-transition: all 0.4s ease;
       transition: all 0.4s ease; }
-  .phone .phoneLogo {
+  .phone .phoneLogo, .phone .emailLogo, .phone .resumeLogo {
     padding-right: 10px; }
   .phone:hover {
+    color: #7dd1c4;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+
+.sidephone {
+  text-align: center;
+  font-size: 1.2em;
+  color: #e4e4e4;
+  font-family: "avenir", "proxima-nova", sans-serif;
+  margin-top: -38px;
+  margin-bottom: 10%; }
+  .sidephone a {
+    color: #e4e4e4; }
+    .sidephone a:hover {
+      color: #7dd1c4;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+  .sidephone .phoneLogo, .sidephone .emailLogo, .sidephone .resumeLogo {
+    padding-right: 10px; }
+  .sidephone:hover {
     color: #7dd1c4;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
@@ -310,7 +332,6 @@ nav {
     text-align: center;
     float: right;
     margin-top: 30px;
-    margin-right: 40px;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease; }
@@ -386,14 +407,8 @@ nav {
     margin-top: 3%;
     text-align: left; }
 
-.slick-prev, .slick-next {
-  top: 33%; }
-
 .slick-prev:before, .slick-next:before {
   color: #4d8179; }
-
-.slick-prev:before:hover, .slick-next:before:hover {
-  color: #7dd1c4; }
 
 .slick-dots {
   bottom: 94%; }

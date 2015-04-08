@@ -47,6 +47,8 @@
     color: transparent;
     outline: none;
     background: transparent;
+
+
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -68,7 +70,7 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
+  /*   opacity: .75; */
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -110,6 +112,8 @@
 {
     content: '←';
 }
+
+
 
 /* Dots */
 .slick-slider
