@@ -556,41 +556,48 @@ video.vid {
 
 	/////SLIDER//////
 
-.image-slider {
-	position:relative;
-	display: inline-block;
-	line-height: 0;
-}
-
-
-.image-slider > div {
-	position: absolute;
-	top: 0; bottom: 0; left: 0;
-	width: 25px;
-	max-width: 100%;
-	overflow: hidden;
-	resize: horizontal;
-}
-
-/* Cross-browser resizer styling */
-.image-slider > div:before {
-	content: '';
-	position: absolute;
-	right: 0; bottom: 0;
-	width: 13px; height: 13px;
-	padding: 5px;
-	background: linear-gradient(-45deg, white 50%, transparent 0);
-	background-clip: content-box;
-	cursor: ew-resize;
-	-webkit-filter: drop-shadow(0 0 2px black);
-	filter: drop-shadow(0 0 2px black);
-}
-
-.image-slider img {
-	user-select: none;
-	width: 100%;
-
-}
+	.con {
+	  width: 562px;
+	  height: 300px;
+	  border: 2px solid ;
+	  position: relative;
+	  margin: auto;
+	}
+	.con img {
+	  height: 100%;
+	  object-fit: cover;
+	  position: absolute;
+	}
+	.coverImage {
+	  position: absolute;
+	  background: url("../images/compPeralta.jpg");
+	  background-size: auto 100%;
+	  width: 50%;
+	  height: 100%;
+	}
+	.handle {
+	  width: 0px;
+	  height: 100%;
+	  border-left: 12px solid #fff;
+	  position: absolute;
+	  left: 50%;
+	}
+	.handle:after {
+	  content: "DRAG";
+	  display: block;
+	  width: 60px;
+	  height: 60px;
+	  border: 2px solid #eee;
+	  border-radius: 50%;
+	  color: #999;
+	  line-height: 60px;
+	  font-weight: 300;
+	  text-align: center;
+	  background: #fff;
+	  position: absolute;
+	  left: -36px; top: 0; bottom: 0;
+	  margin: auto;
+	}
 
 //ABOUT///
 

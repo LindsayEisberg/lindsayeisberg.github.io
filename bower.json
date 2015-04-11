@@ -21,7 +21,8 @@
     "neat": "~1.7.2",
     "fullpage.js": "~2.6.2",
     "slick.js": "~1.4.1",
-    "mailto": "~0.1.2"
+    "mailto": "~0.1.2",
+    "jquery-ui": "~1.11.4"
   },
   "resolutions": {
     "jquery": "~2.1.3"

@@ -40,14 +40,16 @@ $('.menu-cont').on('click', function(event) {
   });
 
 
-/////CARD FLIP///////
-$('#js-flip-1').toggle(
-    function() {
-        $('#js-flip-1 .card').addClass('flipped');
-    },
-    function() { $('#js-flip-1 .card').removeClass('flipped');
-    }
-);
+////PERALTA SLIDER///
+// $(".handle").draggable({
+//   axis: "x",
+//   containment: "parent",
+//   drag: function() {
+//     var position = $(this).position();
+//     var positionExtra = position.left + 6;
+//     $(".coverImage").width(positionExtra + "px");
+//   }
+// });
 
 
 ///SINGLE PAGE SCROLL///
