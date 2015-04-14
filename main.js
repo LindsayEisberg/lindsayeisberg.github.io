@@ -57,7 +57,7 @@ $('.menu-cont').on('click', function(event) {
     scrollOverflow: true,
     scrollingSpeed: 1000,
     anchors: ['lindsayeisberg', 'portfolio', 'aboutme', 'contactme'],
-		menu: '#menu'
+		menu: '#menu',
     responsive: 800
 
   });
