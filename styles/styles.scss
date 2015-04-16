@@ -505,7 +505,7 @@ nav {
   justify-content: center;
 }
 
-.slideBtn {
+.slideBtn, .slideBtnBottom {
 	border: 3px solid $alphaDark;
 	text-transform: uppercase;
 	font-family: $head-font;
@@ -520,6 +520,13 @@ nav {
 	}
 }
 
+.slideBtnBottom {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 7px;
+	margin-right: 32px;
+}
 .tech {
 	margin-bottom: 30px;
 	h5 {
@@ -552,7 +559,35 @@ video.vid {
 	height: 380px;
 }
 
+//////modal////////
 
+.modalCompare {
+	background: rgba(228, 228, 228, 0.8);
+	box-shadow:none;
+}
+.modal-dialog {
+	width: 850px;
+
+}
+.compareImgs {
+	display: flex;
+	justify-content: space-between;
+}
+
+.modalImg {
+	h4 {
+		text-align:left;
+	}
+}
+
+.modalImg:last-child {
+	margin-left: 25px;
+}
+
+.peralta {
+	width: 405px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
 
 	/////SLIDER//////
 

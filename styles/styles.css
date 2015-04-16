@@ -442,7 +442,7 @@ nav {
   display: flex;
   justify-content: center; }
 
-.slideBtn {
+.slideBtn, .slideBtnBottom {
   border: 3px solid rgba(27, 27, 27, 0.8);
   text-transform: uppercase;
   font-family: "avenir", "proxima-nova", sans-serif;
@@ -450,12 +450,19 @@ nav {
   padding: 10px;
   color: #1b1b1b;
   margin-right: 25px; }
-  .slideBtn:hover {
+  .slideBtn:hover, .slideBtnBottom:hover {
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
     transition: all 0.6s ease;
     background-color: rgba(27, 27, 27, 0.8);
     color: #e4e4e4; }
+
+.slideBtnBottom {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 7px;
+  margin-right: 32px; }
 
 .tech {
   margin-bottom: 30px; }
@@ -476,6 +483,27 @@ video.vid {
   border: 2px solid #e4e4e4;
   border-radius: 5px;
   height: 380px; }
+
+.modalCompare {
+  background: rgba(228, 228, 228, 0.8);
+  box-shadow: none; }
+
+.modal-dialog {
+  width: 850px; }
+
+.compareImgs {
+  display: flex;
+  justify-content: space-between; }
+
+.modalImg h4 {
+  text-align: left; }
+
+.modalImg:last-child {
+  margin-left: 25px; }
+
+.peralta {
+  width: 405px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
 
 .con {
   width: 562px;
@@ -614,6 +642,17 @@ video.vid {
 @media only screen and (min-width: 1224px) {
   .container {
     width: 1050px; } }
+@media only screen and (max-width: 992px) {
+  .slideBtnBottom {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 26%;
+    margin-right: 30%;
+    margin-bottom: 3%; } }
+@media only screen and (max-width: 768px) {
+  .modal-dialog {
+    width: auto; } }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .bgImg {
