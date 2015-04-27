@@ -946,7 +946,15 @@ video.vid {
     font-size: 0.8em; }
 
   .top-nav {
-    display: none; } }
+    display: none; }
+
+  .modalImg h4 {
+    font-size: 0.6em; }
+    .modalImg h4 .subHead {
+      font-size: 0.9em; }
+
+  .peralta {
+    width: 100%; } }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   h2 {
