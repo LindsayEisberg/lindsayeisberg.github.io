@@ -79,9 +79,13 @@ Main Content
 	}
 
 	h1 {
-		font-size: 2.2rem;
+		font-size: 3rem;
 		line-height: 1;
 		margin: 10px auto;
+			font-weight: 300;
+	}
+	h3 {
+		font-size: 18px;
 	}
 
 	@include MQ(M) {
@@ -183,6 +187,9 @@ Modal Window
 		font-family: $secondary-font;
 		font-weight: 300;
 		font-size: 18px;
+		@include MQ(XS) {
+			margin: 5em 0 2em;
+		}
 
   }
 
@@ -259,12 +266,4 @@ Modal Window
 			width: 250px;
 		}
 	}
-}
-
-@media only screen and (max-width: 599) {
-.cd-modal-content {
-	p {
-		margin: 6em 0 2em;
-	}
-}
 }
