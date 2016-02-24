@@ -183,12 +183,6 @@ Modal Window
 		font-family: $secondary-font;
 		font-weight: 300;
 		font-size: 18px;
-		@include MQ(XS) {
-
-					margin: 3em 0 2em;
-
-			}
-
 
   }
 
@@ -265,4 +259,12 @@ Modal Window
 			width: 250px;
 		}
 	}
+}
+
+@media only screen and (max-width: 599) {
+.cd-modal-content {
+	p {
+		margin: 6em 0 2em;
+	}
+}
 }
