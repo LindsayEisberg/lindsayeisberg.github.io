@@ -1,308 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
-	<link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="bower_components/slick.js/slick/slick-theme.css">
-	<!-- <link rel="stylesheet" href="vendors/onepage-scroll.css"> -->
-	<link rel="stylesheet" href="styles/styles.css">
-	<link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' rel='stylesheet' type='text/css'>
-	<script src="//use.typekit.net/idu4scn.js"></script>
-	<script>try{Typekit.load();}catch(e){}</script>
+  <meta charset="UTF-8">
+  <title>Lindsay J Eisberg</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
 
+  <script src="scripts/modernizr.js"></script>
 </head>
 <body>
+  <main class="cd-main-content">
+    <section class="center">
+      <h1>[ LINDSAY J EISBERG ]</h1>
+      <h3>UI & Front End Development</h3>
+      <a href="#0" class="cd-btn" id="modal-trigger" data-type="cd-modal-trigger">Want to know more?</a>
+    </section>
+  </main>  <!--  .cd-main-content -->
 
-<div id="fullpage">
-	<div class="section" id="home">
-		<div class="bgImg">
-
-			<header>
-  				<a class='menu-cont' href='#'>
-    			<span class='menu'></span>
-    			<span class='menu-txt' data-text='Close'>
-      			Open
-    			</span>
-  				</a>
-			</header>
-
-
-			<input type="checkbox" id="sidebarToggle" name="sidebarToggle">
-		<div class="page-wrap">
-		<label for="sidebarToggle" class="toggle"></label>
-		<div class="splash">
-			<div class="row">
-				<div class="col-md-1 socialMedia">
-					<ul class="social">
-						<li><a href="https://www.linkedin.com/in/lindsayeisberg" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
-
-						<li><a href="https://github.com/LindsayEisberg" target="_blank"><i class="fa fa-github fa-3x"></i></a></li>
-						<li><a href="mailto:lindsay.eisberg@gmail.com"><i class="fa fa-envelope-o fa-3x"></i></a></li>
-					</ul>
-				</div>
-				<div class="col-md-11 splashContent">
-					<h4><span class="mediaName">Lindsay Eisberg | Frontend & UI Development</span></h4>
-					<h2><span class="develop">DEVELOP</span></h2>
-					<h2><span class="design">DESIGN</span></h2>
-					<h2><span class="create">CREATE</span></h2>
-					<h4><span class="name">Lindsay Eisberg | Frontend & UI Development</span></h4>
-				</div>
-
-			</div>
-		</div> <!-- splash -->
-
-				<a class="arrow-wrap" href="#portfolio">
-					<span class="fa fa-angle-double-down fa-3x arrow"></span></a>
-
-
-		<div class="sidebar">
-			<div class="sideNav">
-			<ul id="menu">
-				<li data-menuanchor="lindsayeisberg"><a href="#lindsayeisberg">HOME</a></li>
-				<li data-menuanchor="portfolio"><a href="#portfolio">WORK</a></li>
-				<!-- <li><a href="images/LEresume.pdf" download>RESUME</a></li> -->
-				<li data-menuanchor="aboutme"><a href="#aboutme">ABOUT</a></li>
-				<li data-menuanchor="contactme"><a href="#contactme">CONTACT</a></li>
-			</ul>
-
-		</div>
-		<ul class="sideSocial">
-			<li><a href="https://www.linkedin.com/in/lindsayeisberg" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a></li>
-			<li><a href="https://github.com/LindsayEisberg" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-			<li><a href="mailto:lindsay.eisberg@gmail.com"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-		</ul>
-
-		<p class="sidephone"><span class="resumeLogo"><i class="fa fa-file-text-o"></i></span><a href="images/LEresume.pdf" download>Download My Resume</a></h4>
-		<p class="sidephone"><span class="phoneLogo">☎</span><a href="tel:+15162705264">516 | 270 | 5264</a></p>
-	</div> <!-- sidebar -->
-	</div> <!-- page-wrap -->
-	</div> <!-- bgImg -->
-</div><!-- section1 -->
-	<!-- WORK SECTION -->
-
-<div class="section" id="work">
-	<div class="pageBg">
-		<nav class="top-nav">
-			<ul>
-				<li><a href="#lindsayeisberg">HOME</a></li>
-				<li><a href="#portfolio">WORK</a></li>
-				<!-- <li><a href="images/LEresume.pdf" download>RESUME</a></li> -->
-				<li><a href="#aboutme">ABOUT</a></li>
-				<li><a href="#contactme">CONTACT</a></li>
-			</ul>
-		</nav>
-	<h2><span class="pageHead">WORK</span></h2><h4><span class="subHead">Examples of Code & Design</span></h4>
-	<p class="swipe"><em>swipe left or right to view more work.</em></p>
-
-	<div class="container">
-		<div class="row">
-			<div class= "workExamples">
-				<div class="your-class">
-  					<div>
-  					<div class="col-md-4 leftSlide">
-  						<h3>AUDITORIUM</h3>
-
-  						<p>Auditorium is the final project created at The Iron Yard. Created with a Rails Engineer, Auditorium is a real time video conferencing application using WebRTC standards. With Auditorium, you can create profiles, moderate lectures, events, & presentations, or participate in other events, asking questions or listening in as a viewer.  </p>
-  						<div class="tech"><h5>Tech Stack</h5>
-								<div class="row">
-								<div class="col-xs-6 techLeft">
-								<p>AngularJS</p>
-								<p>WebRTC</p>
-								<p>Bourbon/Sass</p>
-								</div>
-								<div class="col-xs-6 techRight">
-									<p>Twitter Bootstrap</p>
-									<p>Json Web Tokens</p>
-									<p>Rails</p>
-								</div>
-							</div>
-						</div>
-						<div class="btns">
-							<a href="https://github.com/Harvey-Nash/TIYFinalProject" target="_blank" class="slideBtn">TO THE CODE</a><a href="http://www.auditorium.io" target="_blank" class="slideBtn">TO THE SITE</a>
-						</div>
-  					</div>
-  					<div class="col-md-8" rightSlide>
-  						<img src="images/auditorium.jpg">
-  					</div>
-
-  					</div>
-  					<div>
-  					<div class="col-md-4 leftSlide">
-  						<h3>FLIXAR</h3>
-						<p>Flixar was the first team project to be completed at The Iron Yard. Using IMDB APIs, Flixar pulls movie suggestions based on a series of questions to determine mood, & genres preferred. </p>
-						<div class="tech"><h5>Tech Stack</h5>
-							<div class="row">
-							<div class="col-xs-6 techLeft">
-							<p>AJAX</p>
-							<p>Sass/CSS3</p>
-							<p>Foundation</p>
-							</div>
-							<div class="col-xs-6 techRight">
-								<p>Javascript/Jquery</p>
-								<p>Underscore</p>
-								<p>HTML5</p>
-							</div>
-						</div>
-					</div>
-					<div class="btns">
-						<a href="https://github.com/LindsayEisberg/gitReal" target="_blank" class="slideBtn">TO THE CODE</a><a href="http://lindsayeisberg.github.io/gitReal/" target="_blank" class="slideBtn">TO THE SITE</a>
-					</div>
-  					</div>
-  					<div class="col-md-8 rightSlide">
-							<video width="100%" controls autoplay loop>
-							  <source src="images/flixar.mp4" type="video/mp4">
-								Your browser does not support the video tag.
-							</video>
-  					</div>
-  					</div>
-	  				<div>
-	  					<div class="col-md-4 leftSlide">
-	  						<h3>POWELL PERALTA</h3>
-	  						<p>Peralta site is an example of my abilities to transform a comp JPG to a responsive design. This example was done without the use of Twitter Bootstrap, Foundation, or other frameworks typically used for layout. It is fully responsive and uses CSS3 animations to add excitement to the comp provided. </p>
-								<div class="tech"><h5>Tech Stack</h5>
-									<div class="row">
-									<div class="col-xs-6 techLeft">
-									<p>CSS3/Sass</p>
-									<p>HTML5</p>
-									</div>
-									<div class="col-xs-6 techRight">
-
-									</div>
-								</div>
-							</div>
-							<div class="btns">
-								<a href="https://github.com/LindsayEisberg/powellPeraltaSkateSite" target="_blank" class="slideBtn">TO THE CODE</a><a href="http://lindsayeisberg.github.io/powellPeraltaSkateSite/" target="_blank" class="slideBtn">TO THE SITE</a>
-							</div>
-							<a href="#/compare" class="slideBtnBottom" data-toggle="modal" data-target="#myModal">COMPARE THE WORK</a>
-	  					</div>
-	  					<div class="col-md-8 rightSlide">
-
-								<img src="images/myPeralta.jpg">
-
-	  					</div>
-						</div>
-	  			</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
+  <div class="cd-modal" data-modal="modal-trigger">
+    <div class="cd-svg-bg"
+  data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"
+  data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z"
+  data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"
+  data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z"
+  data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"
+  data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+    <svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+      <title>Lindsay J Eisberg</title>
+      <path id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+      <path id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+      <path id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+    </svg>
+  </div>
+  <div class="cd-modal-content">
+    <p>
+      My name is Lindsay Eisberg and I am a UI & Frontend Developer/Designer. Before I show you my work, I want to make sure it is all perfect. In the meantime, please browse some code samples, download my resume or shoot me an email!
+    </p>
+<div class="action-btns">
+  <a href="http://www.github.com/lindsayeisberg" target="_blank">View Some Code</a>
+<a href="img/eisberg-resume.pdf" download>Download My Resume</a>
+    <a href="mailto:lindsay.eisberg@gmail.com">Talk To Me</a>
 </div>
 
 
+  </div> <!-- cd-modal-content -->
+  <a href="#0" class="modal-close">Close</a>
+  </div> <!-- cd-modal -->
 
+<div class="cd-cover-layer"></div>
 
-	 <!-- WORK SECTION -->
-<!-- 	<div class="section" id="resume">
-	<div class="pageBg">
-<h2><span class="pageHead">RESUME</span></h2>
-	</div>
-</div> --><!-- RESUME SECTION -->
-	<div class="section" id="about">
-		<div class="aboutBg">
-			<nav class="top-nav">
-				<ul>
-					<li><a href="#lindsayeisberg">HOME</a></li>
-					<li><a href="#portfolio">WORK</a></li>
-					<!-- <li><a href="images/LEresume.pdf" download>RESUME</a></li> -->
-					<li><a href="#aboutme">ABOUT</a></li>
-					<li><a href="#contactme">CONTACT</a></li>
-				</ul>
-			</nav>
-			<div class="container aboutHeader">
-				<h2 class="about"><span class="pageHead">ABOUT</span></h2>
-			</div>
-
-			<div class="container comments">
-				<h4><span class="subHead" id="full">My name is Lindsay Eisberg &</span></h4>
-				<h4><span class="subHead" id="media">My name is Lindsay Eisberg</span></h4>
-				<h4><span class="subHead" id="and">&</span></h4>
-				<h5><span class="aboutMe"> I develop web applications.</span></h5>
-				<h5><span class="aboutMe"> I enjoy clean User Interface.</span></h5>
-				<h5><span class="aboutMe"> I love beautiful design.</span></h5>
-				<h5 class="last"><span class="aboutMe lastAbout">I Code. I Program. I Develop. I Design.</span></h5>
-			</div>
-		</div>
-	</div><!-- ABOUT SECTION -->
-	<div class="section" id="contact">
-		<div class="pageBg">
-			<nav class="top-nav">
-				<ul>
-					<li><a href="#lindsayeisberg">HOME</a></li>
-					<li><a href="#portfolio">WORK</a></li>
-					<!-- <li><a href="images/LEresume.pdf" download>RESUME</a></li> -->
-					<li><a href="#aboutme">ABOUT</a></li>
-					<li><a href="#contactme">CONTACT</a></li>
-				</ul>
-			</nav>
-			<h2><span class="pageHead">CONTACT</span></h2>
-			<h4><span class="subHead">Like What you see? Get in Touch!</span></h4>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="col-md-8 centerContact">
-						<div class="socialMediaContact">
-							<ul class="social">
-
-
-								<li><a href="https://www.linkedin.com/in/lindsayeisberg" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a></li>
-
-								<li><a href="https://github.com/LindsayEisberg" target="_blank"><i class="fa fa-github fa-3x"></i></a></li>
-
-							</ul>
-
-						</div>
-
-						<h4 class="phone"><span class="emailLogo">✍</span><a href="mailto:lindsay.eisberg@gmail.com">lindsay.eisberg@gmail.com</a></h4>
-						<h4 class="phone"><span class="phoneLogo">☎</span><a href="tel:+15162705264">516 | 270 | 5264</a></h4>
-						<h4 class="phone"><span class="resumeLogo"><i class="fa fa-file-text-o"></i></span><a href="images/LEresume.pdf" download>Download My Resume</a></h4>
-
-						<div class="col-md-2"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- MODAL FOR COMPARISON -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content modalCompare">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      <div class="modal-body compareImgs">
-        <div class="modalImg">
-					<h4><span class="subHead">IMAGE PROVIDED</span></h4>
-					<img class="peralta" src="images/powell_peralta_mockup.jpg" alt="">
-        </div>
-				<div class="modalImg">
-					<h4><span class="subHead">MY FINISHED PRODUCT</span></h4>
-					<img class="peralta" src="images/myPeraltaFullSmall.jpg" alt="">
-				</div>
-      </div>
-		</div>
-	</div>
-</div>
-
-
-
-
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/jquery-ui/jquery-ui.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="vendors/jquery.onepage-scroll.js"></script>
-<script src="bower_components/fullpage.js/vendors/jquery.slimscroll.js"></script>
-<script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
-<script src="bower_components/slick.js/slick/slick.js"></script>
-
-
-<script src="main.js"></script>
-
-
+<script src="scripts/jquery-2.1.4.js"></script>
+<script src="scripts/snap.svg-min.js"></script>
+<script src="scripts/main.js"></script>
 </body>
 </html>
