@@ -202,6 +202,12 @@ Modal Window
       font-size: 20px;
     }
   }
+	@include MQ(XS) {
+		p {
+			font-size: 20px;
+			margin: 3em 0 2em;
+		}
+	}
 }
 
 /* --------------------------------
